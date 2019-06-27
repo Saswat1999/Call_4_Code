@@ -1,0 +1,30 @@
+<html>
+   <body>
+      <form action = "http://localhost:5000/result" method = "POST">
+         <p>Alert:   <input type="radio" name="options1" id="option1" value="0" required> Red </input>
+		 <input type="radio" name="options1" id="option2" value="1"> Orange </input>
+		 <input type="radio" name="options1" id="option3" value="2"> Yellow </input><br></p>
+         <p>Windspeed <input type = "number" name = "windspeed" required></p>
+         <p>Rainfall <input type = "number" name = "rainfall" required></p>
+         <p>Near Sea:  <input type="radio" name="options" id="option1" value="0" required> Yes </input>
+		 <input type="radio" name="options" id="option2" value="1"> No </input><br></p>
+		 <p>Near River:  <input type="radio" name="options2" id="option1" value="0" required> Yes </input>
+		 <input type="radio" name="options2" id="option2" value="1"> No </input><br></p>
+		 <p>Development:  <input type="radio" name="options3" id="option1" value="0" required> Fully </input>
+		 <input type="radio" name="options3" id="option2" value="1"> Semi </input>
+		 <input type="radio" name="options3" id="option3" value="2"> Under </input><br></p>
+		 <p>Disaster:  <input type="radio" name="options4" id="option1" value="0" required> Cyclone </input>
+		 <input type="radio" name="options4" id="option2" value="1"> Flood </input><br></p>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+	  {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class=flashes>
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+   </body>
+</html>

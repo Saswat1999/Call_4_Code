@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<center>
+   <body>
+      <h3>Alert :  {{alert}}</h3></br>
+	  <h3>Wind Speed :  {{wind}}</h3></br>
+	  <h3>Rain Fall :  {{rain}}</h3></br>
+	  <h3>Near Sea :  {{sea}}</h3></br>
+	  <h3>Near River :  {{river}}</h3></br>
+	  <h3>Development Status :  {{dev}}</h3></br>
+	  <h3>Disaster :  {{dis}}</h3></br>
+	  <h1>Approximate Food Hamper in days: {{x}}</h1>
+	  </br><h1>Approximate Electricity Hamper in days: {{z}}</h1>
+	  {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class=flashes>
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+	<p>Do you want to <a href = "{{ url_for('index') }}">
+         <b>Renter Details?</b></a></p>
+   </body>
+   </center>
+</html>
