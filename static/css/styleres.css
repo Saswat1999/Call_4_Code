@@ -1,0 +1,19 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+h3{
+  color:white;
+
+
+}
+body{
+  background-image: url(n.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: new time roman ;
+}
+h1{
+  color:black !important;
+  font-weight: bold;
+}
