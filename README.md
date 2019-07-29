@@ -1,5 +1,9 @@
 # Call 4 Code
 
+# Project Name: Saviours
+
+An automated way to provide hygenic water, food & medicines to affected Rural & Remote Areas.
+
 1:- In Medicine And Food file there are two files sender and reciever which are used for operating the LoRa using Hashcode technique for security survilliance.
 
 2:- In nRF Communication folder there are two files transmitter and reciever file which are used for the nrf communication if there is no elctricty and network, then an offline system is introduced at that time.
