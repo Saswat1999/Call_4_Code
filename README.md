@@ -1,5 +1,3 @@
-# Call 4 Code
-
 # Project Name: Saviours
 
 An automated way to provide hygenic water, food & medicines to affected Rural & Remote Areas.
